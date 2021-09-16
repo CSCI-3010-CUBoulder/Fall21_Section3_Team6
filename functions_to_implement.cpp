@@ -41,7 +41,7 @@ int Sum(std::vector<int> nums) {
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums) {
-    int product = 0;
+    int product = 1;
     for (int i = 0; i < nums.size(); i++) {
         // multiply each element of the vector
         product *= nums[i];
