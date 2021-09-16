@@ -31,12 +31,24 @@ std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums) {
-    // hello this is a modifcation on the master branch
-    return 0;
+    int sum = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        sum = nums.at(i) + sum; //this does the thing
+    }
+    return sum;
 }
 
 // Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
+int Product(std::vector<int> nums){
+    int mult = 0;
+    if(nums.size() > 0) {
+        mult = nums[0];
+        for (int i = 1; i < nums.size(); i++){
+            mult = mult * nums.at(i);
+        }
+    }
+    return mult;
+}
 
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
