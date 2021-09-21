@@ -15,7 +15,7 @@ TEST_CASE("Testing other function", "[Product]"){
     std::vector<int> v1{1, 2, 5, 10};
     REQUIRE(Product(v1) == 100);
     std::vector<int> v2{3, -1, 2, -10};
-    REQUIRE(Sum(v2) == -60);
+    REQUIRE(Product(v2) == 60);
     std::vector<int> v3{2, 4, 6, -1};
     REQUIRE(Product(v3) == -48);
     std::vector<int> v4{0, 12, 19};
