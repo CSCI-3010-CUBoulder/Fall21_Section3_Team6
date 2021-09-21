@@ -126,8 +126,8 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
 
-int main(int argc, char *argv[]) {
-    std::vector<int> nums = {5,1,10,24,12};
-    std::cout<<"sum:" << Sum(nums)<< std::endl;
-    std::cout <<"product" << Product(nums) << std::endl;
-}
+// int main(int argc, char *argv[]) {
+//     std::vector<int> nums = {5,1,10,24,12};
+//     std::cout<<"sum:" << Sum(nums)<< std::endl;
+//     std::cout <<"product" << Product(nums) << std::endl;
+// }

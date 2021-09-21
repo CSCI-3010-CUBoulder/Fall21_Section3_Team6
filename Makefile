@@ -4,7 +4,7 @@ CXXFLAGS = -std=c++17 -Wall
 all: test
 
 clean:
-  rm test
- 
- test: functions_to_implement.cpp
-  $(CXX) $(CXXFLAGS) functions_to_implement.cpp -o test
+	rm test
+
+test: test.cpp
+	$(CXX) $(CXXFLAGS) test.cpp -o test
