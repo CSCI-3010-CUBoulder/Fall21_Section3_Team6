@@ -10,3 +10,9 @@ TEST_CASE ("Testing sum functions", "[sum]") {
     std::vector<int> v2{30, 21, 2, -10};
     REQUIRE(Sum(v2) == 43);
 }
+TEST_CASE("Testing other function", "[Product]"){
+    std::vector<int> v1{1, 2, 5, 10};
+    REQUIRE(Product(v1) == 100);
+    std::vector<int> v2{3, -1, 2, -10};
+    REQUIRE(Sum(v2) == -60);
+}
