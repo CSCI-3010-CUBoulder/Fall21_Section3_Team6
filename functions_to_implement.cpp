@@ -1,3 +1,5 @@
+#include <vector>
+#include <iostream>
 /* String functions section */
 
 // Splits a single string on separator into a vector of strings
@@ -31,12 +33,21 @@ std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums) {
-    // hello this is a modifcation on the master branch
-    return 0;
+    int count = 0;
+    for(int i = 0; i < nums.size(); i++) {
+        count = count + nums.at(i);
+    }
+    return count;
 }
 
 // Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
+int Product(std::vector<int> nums) {
+    int output = 1;
+    for(int i = 0; i < nums.size(); i++) {
+        output = output * nums.at(i);
+    }
+    return output;
+}
 
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
@@ -114,3 +125,9 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
+
+// int main(int argc, char *argv[]) {
+//     std::vector<int> nums = {5,1,10,24,12};
+//     std::cout<<"sum:" << Sum(nums)<< std::endl;
+//     std::cout <<"product" << Product(nums) << std::endl;
+// }
